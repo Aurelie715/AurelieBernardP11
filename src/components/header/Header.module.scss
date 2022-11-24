@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0 20px 0;
+  .header-logo {
+    height: 55px;
+  }
+  .header-nav {
+    display: flex;
+    list-style-type: none;
+    .nav-element {
+      color: #ff6060;
+      text-decoration: none;
+      margin-left: 57px;
+    }
+    .active {
+      text-decoration: underline;
+    }
+  }
+}

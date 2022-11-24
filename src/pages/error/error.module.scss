@@ -1,0 +1,31 @@
+.error-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 288px;
+  color: #ff6060;
+  margin: unset;
+  margin-top: 175px;
+}
+
+.error-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 36px;
+  color: #ff6060;
+  margin: unset;
+  margin-top: 66px;
+}
+
+.error-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff6060;
+  text-decoration-line: underline;
+  margin-top: 182px;
+  margin-bottom: 159px;
+}
