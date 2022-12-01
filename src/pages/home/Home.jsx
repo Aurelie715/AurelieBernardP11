@@ -4,6 +4,7 @@ import Card from '../../components/card/Card'
 import ListeLogements from '../../data/logements.json'
 import styles from './home.module.scss'
 import BannerImg from "../../assets/banner-home.jpg"
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
       <div className={styles['card-container']}>
         {ListeLogements.map(({id, cover, title}) => {
           return (
-            <Card key={id} id={id} cover={cover} title={title}/>
+            <Link to={`/fiche/${id}`}><Card key={id} id={id} cover={cover} title={title}/></Link>
           )
         })}
       </div>

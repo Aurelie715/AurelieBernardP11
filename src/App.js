@@ -17,6 +17,7 @@ function App() {
           <Route path="/fiche/:id" element={<Fiche />} />
           <Route path="/a-propos" element={<Propos />} />
           <Route path="*" element={<Error />} />
+          {/* <Route path="/fiche/*" element={<Error />} /> */}
         </Routes>
       </div>
       <Footer />

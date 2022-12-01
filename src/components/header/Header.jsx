@@ -7,7 +7,7 @@ export default function Header() {
     const navLinkClassName = ({ isActive }) => `${(isActive ? styles.active : "")} ${styles['nav-element']}`;
 
   return (
-    <div className={styles.header}>
+    <header className={styles.header}>
         <img src={logo} alt="Le logo de Kasa" className={styles['header-logo']}/>
         <nav>
             <ul className={styles['header-nav']}>
@@ -20,7 +20,7 @@ export default function Header() {
                 </li>
             </ul>
         </nav>
-    </div>
+    </header>
   )
 }
 

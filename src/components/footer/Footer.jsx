@@ -4,9 +4,9 @@ import styles from './footer.module.scss'
 
 export default function Footer() {
   return (
-    <div className={styles.footer}>
+    <footer className={styles.footer}>
       <img src={logo} alt="Le logo de Kasa" className={styles['footer-logo']}/>
       <p>&copy; 2020 Kasa. All rights reserved</p>
-    </div>
+    </footer>
   )
 }

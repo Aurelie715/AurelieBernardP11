@@ -1,0 +1,8 @@
+.container-accordions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .container-accordion {
+    width: 45%;
+  }
+}
