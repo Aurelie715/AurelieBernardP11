@@ -16,7 +16,7 @@ export default function Header() {
                     <NavLink to="/" className={navLinkClassName}>Accueil</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/a-propos" className={navLinkClassName}>A Propos</NavLink>
+                    <NavLink to="/about" className={navLinkClassName}>A Propos</NavLink>
                 </li>
             </ul>
         </nav>

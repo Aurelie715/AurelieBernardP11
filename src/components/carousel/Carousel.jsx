@@ -22,17 +22,22 @@ export default function Carousel({slides}) {
   return (
     <div className={styles.carousel}>
         <img src={currentSlide} alt="" className={styles['carousel-image']}/>
-        <div className={styles.arrow}>
-            <div onClick={previousImage} className={styles['arrow-previous']}>
-                <img src={previous} alt="" className={styles['arrow-image']}/>
+        { slides.length > 1 ? 
+        (<><div className={styles.arrow}>
+                <div onClick={previousImage} className={styles['arrow-previous']}>
+                    <img src={previous} alt="" className={styles['arrow-image']} />
+                </div>
+                <div onClick={nextImage} className={styles['arrow-next']}>
+                    <img src={next} alt="" className={styles['arrow-image']} />
+                </div>
             </div>
-            <div onClick={nextImage} className={styles['arrow-next']}>
-                <img src={next} alt="" className={styles['arrow-image']} />
+            <div className={styles.number}>
+                <p>{slideNumber}/{numberOfSlides}</p>
             </div>
-        </div>
-        <div className={styles.number}>
-            <p>{slideNumber}/{numberOfSlides}</p>
-        </div>
+        </>) 
+        : 
+        null}
+        
     </div>
   )
 }

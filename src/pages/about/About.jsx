@@ -2,9 +2,9 @@ import React from 'react'
 import Banner from '../../components/banner/Banner'
 import BannerImg from '../../assets/banner-propos.jpg'
 import Accordion from '../../components/accordion/Accordion'
-import styles from './propos.module.scss'
+import styles from './about.module.scss'
 
-export default function Propos() {
+export default function About() {
   return (
     <>
     <Banner img={BannerImg} />

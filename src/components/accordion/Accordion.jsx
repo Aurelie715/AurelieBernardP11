@@ -13,9 +13,12 @@ export default function Accordion({title, description}) {
                 <img src={isOpen ? accordionOpen : accordionClosed} alt="" className={styles['accordion-image']}/>
             </div>
         </div>
-        { isOpen && <div className={styles['accordion-menu']}>
+        { isOpen ?
+         (<div className={styles['accordion-menu']}>
             <p className={styles['accordion-description']}>{description}</p>
-        </div>}
+        </div>)
+        : 
+        null }
     </div>
   )
 }

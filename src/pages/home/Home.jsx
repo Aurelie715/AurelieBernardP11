@@ -13,7 +13,7 @@ export default function Home() {
       <div className={styles['card-container']}>
         {ListeLogements.map(({id, cover, title}) => {
           return (
-            <Link to={`/fiche/${id}`}><Card key={id} id={id} cover={cover} title={title}/></Link>
+            <Link key={id} to={`/accommodation/${id}`}><Card id={id} cover={cover} title={title}/></Link>
           )
         })}
       </div>
