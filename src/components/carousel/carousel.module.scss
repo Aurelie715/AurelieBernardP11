@@ -41,3 +41,16 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .carousel {
+    height: 255px;
+    .arrow {
+      left: 6px;
+      right: 6px;
+      .arrow-image {
+        height: 20px;
+      }
+    }
+  }
+}

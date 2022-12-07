@@ -56,3 +56,46 @@
     width: 45%;
   }
 }
+
+@media (max-width: 768px) {
+  .heading {
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    .heading-logement {
+      .logement-title {
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+      }
+      .logement-location {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+    }
+    .heading-host {
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      .host-info {
+        .host-name {
+          font-size: 12px;
+        }
+        .host-picture {
+          height: 32px;
+          width: 32px;
+          img {
+          }
+        }
+      }
+    }
+  }
+
+  .container-accordions {
+    margin-top: 0;
+    .container-accordion {
+      width: 100%;
+    }
+  }
+}

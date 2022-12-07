@@ -13,3 +13,14 @@
     margin-right: 10px;
   }
 }
+
+@media (max-width: 768px) {
+  .tags {
+    .tag {
+      padding: 0 22px;
+      font-size: 10px;
+      margin-right: 10px;
+      height: 18px;
+    }
+  }
+}

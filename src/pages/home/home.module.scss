@@ -1,8 +1,16 @@
 .card-container {
-  background-color: #f7f7f7;
-  border-radius: 25px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  background-color: #f7f7f7;
+  border-radius: 25px;
   padding-top: 25px;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    background-color: unset;
+    padding-top: unset;
+  }
 }

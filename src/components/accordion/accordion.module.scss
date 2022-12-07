@@ -37,3 +37,27 @@
     color: #ff6060;
   }
 }
+
+@media (max-width: 768px) {
+  .accordion {
+    margin-bottom: 20px;
+  }
+
+  .accordion-btn {
+    height: 30px;
+    .accordion-title {
+      font-size: 13px;
+    }
+    .accordion-image {
+      width: 15px;
+      margin-right: 7px;
+    }
+  }
+
+  .accordion-menu {
+    padding: 18px 12px 52px 12px;
+    .accordion-description {
+      font-size: 12px;
+    }
+  }
+}

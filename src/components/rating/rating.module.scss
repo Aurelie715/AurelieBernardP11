@@ -4,3 +4,17 @@
     margin-right: 10px;
   }
 }
+
+@media (max-width: 768px) {
+  .star {
+    .star-image {
+      margin-right: 5px;
+      .pink-star {
+        height: 15px;
+      }
+      .gray-star {
+        height: 15px;
+      }
+    }
+  }
+}
