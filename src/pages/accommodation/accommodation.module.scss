@@ -49,7 +49,6 @@
 
 .container-accordions {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 26px;
   .container-accordion {
@@ -94,6 +93,7 @@
 
   .container-accordions {
     margin-top: 0;
+    flex-wrap: wrap;
     .container-accordion {
       width: 100%;
     }

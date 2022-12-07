@@ -38,10 +38,16 @@ export default function Accommodation() {
       
       <div className={styles['container-accordions']}>
         <div className={styles['container-accordion']}>
-          <Accordion title="Description" description={logement.description}/>
+          <Accordion title="Description">
+          {logement.description}
+          </Accordion>
         </div>
         <div className={styles['container-accordion']}>
-          <Accordion title="Equipements"/>
+          <Accordion title="Equipements">
+            <ul>
+              {logement.equipments.map((equipment) => <li key={equipment}>{equipment}</li>)}
+            </ul>
+          </Accordion>
         </div>
       </div>
     </div>
