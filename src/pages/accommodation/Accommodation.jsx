@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams } from 'react-router-dom';
+import { Navigate, useParams } from 'react-router-dom';
 import Accordion from '../../components/accordion/Accordion'
 import styles from './accommodation.module.scss'
 import ListeLogements from '../../data/logements.json'
@@ -11,6 +11,9 @@ import Rating from '../../components/rating/Rating'
 export default function Accommodation() {
   const { id } = useParams();
   const logement = ListeLogements.find((logement) => logement.id === id);
+  if (!logement) {
+    return <Navigate to="/error/404" replace={true} />
+  }
   return (
     <div>
       <Carousel slides={logement.pictures}/>
