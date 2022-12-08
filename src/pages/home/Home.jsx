@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 export default function Home() {
   return (
     <>
-      <Banner img={BannerImg} text="Chez vous, partout et ailleurs" className="banner-home"/>
+      <Banner img={BannerImg} text="Chez vous, partout et ailleurs"/>
       <div className={styles['card-container']}>
         {ListeLogements.map(({id, cover, title}) => {
           return (
